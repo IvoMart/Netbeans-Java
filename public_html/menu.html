@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+1 a) Crear con HTML un formulario de alta para el registro de un nuevo menú para una cadena de restaurantes.
+-->
+<html>
+    <head>
+        <title>MENU - Nuevo Producto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav>
+                    <a href="index.html">VOLVER A -> CLINICA O.</a>
+                </nav>
+            </div>
+        </header>
+
+        <div>
+            <div>
+                <fieldset>
+                    <label for="codigoMenu">Codigo del Producto</label>
+                    <input id="codigoMenu" type="number" placeholder="Codigo " readonly="">
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <label for="producto">PRODUCTO:</label>
+                    <input id="producto" type="text" placeholder="Producto…">
+                </fieldset>
+            </div>
+            <fieldset>
+                <div>
+                    <div>
+                        <input type="checkbox" id="celiacos" checked="">
+                        <label for="celiacos">Apto para Celíacos</label>
+                    </div>
+                </div>
+                
+                <div>
+                    <input type="radio" id="veg1" name="vegetariano" checked="">
+                    <label for="veg1">Menú Vegetariano</label>
+                </div>
+                <div >
+                    <input type="radio" id="veg2" name="vegetariano">
+                    <label for="veg2">Menú no vegetariano</label>
+                </div>
+            </fieldset>
+            <div>
+                <label>PRECIO:</label>
+                <div>
+                    <div>
+                        <div>
+                            <span>$</span>
+                        </div>
+                        <input type="text" aria-label="Precio producto">
+                        <div>
+                            <span>,00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label for="descripcion">Descripción del producto</label>
+                <textarea id="descripcion"></textarea>
+            </div>
+            <button type="submit">GUARDAR</button>
+        </div>
+        
+    </body>
+</html>

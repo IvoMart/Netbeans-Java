@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+1 b)Crear con HTML un formulario para realizar el registro de entrada y salida de los trabajadores de un empresa.
+-->
+<html>
+    <head>
+        <title>Registro Ent - Sal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div>
+                <nav>
+                    <a href="index.html" >VOLVER -> CLINICA O.</a>
+                </nav>
+            </div>
+        </header>
+
+        <div>
+            <form>
+                <fieldset>
+                    <legend>Registro de Entrada / Salida</legend>
+                    <div>
+                        <select>
+                            <option value="1">Entrada</option>
+                            <option value="2">Salida</option>
+                        </select>
+                    </div>
+                </fieldset>
+                    <div>
+                        <label>DNI</label>
+                        <input type="text" id="dni" placeholder="DNI">
+                    </div>
+                    <div>
+                        <label for="legajo">LEGAJO</label>
+                        <input type="text" id="legajo" placeholder="Legajo" readonly="">
+                    </div>
+                    <div>
+                        <label for="turno">HORARIO</label>
+                        <select id="turno">
+                            <option>Turno Mañana</option>
+                            <option>Turno Tarde</option>
+                            <option>Turno Noche</option>
+                        </select>
+                    </div>
+                    <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </body>
+</html>
